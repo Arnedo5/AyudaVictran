@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Victransa Connect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- ICON MOON-->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+
+<header>
+    <div class="container-logo">
+        <img class="logo1" src="http://www.victransa.com/ayuda/images/v.gif" width="136" height="133" hspace="15">
+        <img class="logo2" src="http://www.victransa.com/ayuda/images/logo-t2.gif" width="398" height="84">
+    </div>
+</header>
+<div class="content">
+    <div class="step">
+        <!--
+        <div class="container-tittle">
+            <h1 class="tittle-name"><span class="icon icon-download"></span>Descargar archivo</h1>
+        </div>
+        -->
+        <!-- First box -->
+        <div class="container-selector box1" id="block1">
+            <div class="container-text">
+                <span>¡Bienvenido!</span>
+                <p>¿Tiene instalado el programa "Team Viewer" en su equipo?</p>
+                <img src="img/teamIcon.png" alt="Smiley face" height="50" width="50">
+            </div>
+            <div class="container-button">
+                <a href="#"><button id="yesInstall" onclick="changeContainer('block3','block1')">Si</button></a>
+                <a href="http://red.victransa.com/ayuda.exe"><button id="noInstall" onclick="changeContainer('block4','block1')">No, descargar programa</button></a>
+                <a href="#"><button id="notShure" onclick="changeContainer('block2','block1')">No estoy seguro</button></a>
+            </div>
+        </div>
+
+        <!-- Second box-->
+        <div class="container-selector box2" id="block2" style="display:none;">
+            <dip class="undo back1">
+                <span class="icon-undo2" onclick="changeContainer('block1','block2')"></span>
+            </dip>
+            <div class="container-text">
+                <span>Vamos a comprobarlo</span>
+                <p>Revise en la parte inferior derecha de su pantalla. ¿Tiene un icono parecido al siguiente?</p>
+                <img src="img/icon.png" alt="Smiley face" height="150" width="270">
+            </div>
+            <div class="container-button">
+                <a href="#"><button id="yesIcon" onclick="changeContainer('block3','block2')">Si</button></a>
+                <a href="http://red.victransa.com/ayuda.exe"><button id="noInstall" onclick="changeContainer('block4','block2')">No, descargar programa</button></a>
+            </div>
+        </div>
+        <!-- http://red.victransa.com/ayuda.exe -->
+
+        <!-- Third box-->
+        <div class="container-selector box3" id="block3" style="display:none;">
+            <dip class="undo back1">
+                <span class="icon-undo2" onclick="changeContainer('block1','block3')"></span>
+            </dip>
+            <div class="container-text">
+                <span>Ejecutar el programa</span>
+                <p>Haga doble clic sobre el icono de "Team Viewer". Una vez abierto, proporcione el identificador y la contraseña
+                    al equipo informático de Victransa</p>
+                <img class="teamViewer" src="img/teamViewer.png" alt="Smiley face" height="auto" width="500px">
+            </div>
+        </div>
+
+        <!-- Four box -->
+        <div class="container-selector box4" id="block4" style="display:none;">
+            <dip class="undo back1">
+                <span class="icon-undo2" onclick="changeContainer('block1','block4')"></span>
+            </dip>
+            <div class="container-text">
+                <span>Ejecutar el programa</span>
+                <p>Haga click en el ejecutable de la parte inferior izquierda de la pantalla</p>
+                <img class="teamViewer" src="img/step1.png" alt="Smiley face" height="auto" width="">
+                <p>En un par de segundos ​aparecerá una nueva ventana</p>
+                <img class="teamViewer" src="img/step2.png" alt="Smiley face" height="auto" width="">
+                <p>Proporcione el identificador y la contraseña al equipo informático de Victransa</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="container-tittle">
+            <h1 class="tittle-name"><span class="icon icon-point-right"></span>Como ejecutar el archivo<div class="icon-ctrl"></div></h1>
+        </div>
+    </div>
+    <div class="step">
+        <div class="container-tittle">
+            <h1 class="tittle-name"><span class="icon icon-wondering"></span>Problemas ​frecuentes​<div class="icon-ctrl"></div></h1>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-footer">
+        <!-- left -->
+        <div class="left">
+            <h6></h6>
+            <ul class="footer-address">
+                <span class="icon-home"></span>
+                <li class="address">OFICINA CENTRAL: C. Tavertet, 2, P.I. Les Malloles, 08500 Vic</li>
+                <span class="icon-phone"></span>
+                <li class="phone">+34 93889 5161</li>
+                <span class="icon-envelop"></span>
+                <li class="email">comercial@victransa.com</li>
+            </ul>
+            <ul class="footer-link">
+                <span class="icon-info"></span>
+                <li><a href="http://victransa.com/informacion-legal/">Información legal</a></li>
+                <span class="icon-wondering"></span>
+                <li><a href="http://victransa.com/ayuda">Victransa Connect</a></li>
+            </ul>
+        </div>
+        <!-- right -->
+        <div class="right">
+            <a href="http://victransa.com"><img src="http://victransa.com/wp-content/uploads/2013/11/logo5.png" alt="main-logo" class="footer-logo" height="47"
+                    width="180"></a>
+            <div>©2014 Victran, s.a.</div>
+        </div>
+    </div>
+</footer>
+<!-- JS -->
+<script src="js/script.js"></script>
+
+</html>

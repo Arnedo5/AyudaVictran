@@ -1,0 +1,236 @@
+/*
+David Arnedo
+Help page
+*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #34495e;
+}
+
+.container-logo {
+  margin: 0px 30vh;
+  text-align: center;
+}
+
+.logo2  {
+  margin: 25px 0px;
+}
+
+.content {
+    margin: 5vh 35vh;
+    padding: 15px;
+}
+
+.step {
+  position: relative;
+  margin-bottom: 15px; 
+}
+
+.undo {
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  top: 15px;
+}
+
+.container-tittle {
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.icon {
+    margin-right: 20px; 
+}
+
+.tittle-name {
+    padding: 25px 15px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.container-selector {
+  position: relative;
+  text-align: center;
+  max-width: 400px;
+  margin: 5vh auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transition: .5s all;
+}
+
+.icon-ctrl {
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari */
+   transform: rotate(180deg); /* Standard syntax */
+   position: absolute;
+   float: right;
+   right: 10px;
+   top: 25px;
+}
+
+.box3 {
+   max-width: 600px;
+}
+
+.container-selector span {
+  font-size: 25px;
+}
+
+.container-button {
+  text-align: center;
+}
+
+.container-text p {
+    color: #444444;
+    font-size: 18px;
+}
+
+.container-text img,.container-text p  {
+  margin-top: 15px;
+}
+
+.container-button button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #073342;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.container-button  button:hover,.container-button  button:active,.container-button  button:focus {
+  background: #0D5972;
+}
+
+footer {
+  width: 100%;
+  background-color: #34495e;
+  padding: 36px 0px 21px 0px;
+  position: absolute;
+}
+
+.footer-address span,.footer-link span {
+  font-size: 11px;
+  color: #85929e;
+}
+
+.container-footer {
+  width: 996px;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+}
+
+.container-footer .left {
+  float: left;
+}
+
+.container-footer .right {
+  float: right;
+}
+
+.footer-address {
+  margin-top: 1px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #415971;
+}
+
+.footer-address li {
+  display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+  font-size: 11px;
+	color: #85929e;
+  margin-right: 25px;
+}
+
+.footer-link {
+  padding-top: 10px;
+
+}
+
+.footer-link li{
+  display: inline-block;
+	    margin-top: -5px;
+}
+
+.footer-link li a{
+  padding-right: 5px;
+	padding-left: 5px;
+  font-size: 11px;
+  margin-right: 25px;
+  color: #85929e;
+  text-decoration: none;
+}
+
+.right div {
+  font-size: 11px;
+  color: #85929e;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  body {
+    
+  }
+  .container-logo {
+    margin: 0px 20vh;
+    text-align: center;
+  }
+
+  .content {
+      margin: 0px 20vh;
+      padding: 10px;
+  }
+
+  .container-footer {
+    width: 1170px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  body {
+   
+  }
+
+  .logo1 {
+    display: none;
+  }
+  .container-logo {
+    margin: 0px;
+    text-align: center;
+  }
+
+  .content {
+      margin: 0px 3vh;
+      padding: 5px;
+  }
+
+  .teamViewer,.logo2 {
+    width: 300px;
+    height: auto;
+  }
+}
