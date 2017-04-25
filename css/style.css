@@ -191,12 +191,7 @@ footer {
   color: #85929e;
 }
 
-
-
 @media only screen and (max-width: 1200px) {
-  body {
-    
-  }
   .container-logo {
     margin: 0px 20vh;
     text-align: center;
@@ -211,7 +206,6 @@ footer {
     width: 1170px;
   }
 }
-
 
 @media (max-width: 991px) {
   .reziseImage {
