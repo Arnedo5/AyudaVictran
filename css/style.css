@@ -198,12 +198,12 @@ footer {
   }
 
   .content {
-      margin: 0px 20vh;
+      margin: 3vh 20vh;
       padding: 10px;
   }
 
   .container-footer {
-    width: 1170px;
+    width: 900px;
   }
 }
 
