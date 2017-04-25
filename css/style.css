@@ -31,7 +31,7 @@ header {
 }
 
 .content {
-    margin: 5vh 35vh;
+    margin: 10vh 35vh;
     padding: 15px;
 }
 
@@ -137,8 +137,10 @@ footer {
 
 .container-footer {
   width: 996px;
+  /*
   max-width: 100%;
   min-width: 768px;
+  */
   margin: 0 auto;
 }
 
@@ -212,8 +214,9 @@ footer {
 
 
 @media (max-width: 991px) {
-  body {
-   
+  .reziseImage {
+    width: 100%;
+    height: auto;
   }
 
   .logo1 {
@@ -229,8 +232,24 @@ footer {
       padding: 5px;
   }
 
-  .teamViewer,.logo2 {
+  .logo2 {
     width: 300px;
     height: auto;
+  }
+
+  .container-footer {
+    width: 300px;
+  }
+
+  .container-footer .right {
+    float: left;
+  }
+
+  .footer-address li {
+    margin-right: 10px;
+  }
+
+  .icon-home {
+    display: none;
   }
 }
